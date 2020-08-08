@@ -1,26 +1,26 @@
-import React from 'react'
+import React from "react";
 
-const CommentDetail=(props)=>{
-  console.log(props)
-  return(
-    <div class="comment">
-    <a class="avatar">
-      <img src={props.avatar}/>
-    </a>
-    <div class="content">
-      <a class="author">{props.author}</a>
-      <div class="metadata">
-        <div class="date">{props.time}</div>
-        <div class="rating">
-          <i class="star icon"></i>
-          {props.star}
+const CommentDetail = (props) => {
+  console.log(props);
+  return (
+    <div className="comment">
+      <a href="/" className="avatar">
+        <img alt="/" src={props.avatar} />
+      </a>
+      <div className="content">
+        <a href="/" className="author">
+          {props.author}
+        </a>
+        <div className="metadata">
+          <div className="date">{props.time}</div>
+          <div className="rating">
+            <i className="star icon"></i>
+            {props.star}
+          </div>
         </div>
-      </div>
-      <div class="text">
-        {props.text}
+        <div className="text">{props.text}</div>
       </div>
     </div>
-  </div>
   );
 };
 
